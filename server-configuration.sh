@@ -5,10 +5,10 @@
 
 echo "Installing htop"
 # list running applications
-echo sudo apt-get install htop
+sudo apt-get install htop
 # To watch your distro flavor at terminal
 echo "Installing neofetch"
-echo sudo apt-get install neofetch
+sudo apt-get install neofetch
 
 # Tutos YT
 # https://www.youtube.com/watch?v=cSi-NOlomLc
@@ -33,13 +33,13 @@ echo sudo apt-get install neofetch
 # IPV4, method(manual), dns 1.1.1.1 > adding all the statics IP's at Addresses, with Netmask as 255.255.255.0 gateway only steam 192.168.1.1
 
 echo "Installing openssh-server"
-echo sudo apt-get install openssh-server
+sudo apt-get install openssh-server
 echo "service ssh start"
-echo sudo service ssh start
+sudo service ssh start
 
 # Overclocking
 echo "starting install cpufrequtils lm-sensors"
-echo sudo apt install cpufrequtils lm-sensors
+sudo apt install cpufrequtils lm-sensors
 
 # To use it avery mode: 
 # powersave
@@ -48,7 +48,7 @@ echo sudo apt install cpufrequtils lm-sensors
 # performance
 
 echo "start overclocking"
-echo sudo cpufreq-set -r -g performance
+sudo cpufreq-set -r -g performance
 
 # To watch the status use:
 # Clock CPU
