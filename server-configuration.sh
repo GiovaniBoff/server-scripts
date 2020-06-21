@@ -3,9 +3,11 @@
 # echo "your user is $USER"
 # sudo usermod -aG docker $USER
 
+echo "Installing htop"
 # list running applications
 echo sudo apt-get install htop
 # To watch your distro flavor at terminal
+echo "Installing neofetch"
 echo sudo apt-get install neofetch
 
 # Tutos YT
@@ -30,11 +32,13 @@ echo sudo apt-get install neofetch
 # Then
 # IPV4, method(manual), dns 1.1.1.1 > adding all the statics IP's at Addresses, with Netmask as 255.255.255.0 gateway only steam 192.168.1.1
 
-
+echo "Installing openssh-server"
 echo sudo apt-get install openssh-server
+echo "service ssh start"
 echo sudo service ssh start
 
 # Overclocking
+echo "starting install cpufrequtils lm-sensors"
 echo sudo apt install cpufrequtils lm-sensors
 
 # To use it avery mode: 
@@ -43,6 +47,7 @@ echo sudo apt install cpufrequtils lm-sensors
 # ondemand
 # performance
 
+echo "start overclocking"
 echo sudo cpufreq-set -r -g performance
 
 # To watch the status use:
@@ -55,7 +60,7 @@ echo sudo cpufreq-set -r -g performance
 # Configuration at close the Notebook screen (panelscreen)
 # Content from https://www.edivaldobrito.com.br/configurar-ubuntu-para-desligar-quando-tampa-laptop-fechada/
 
-echo sudo vim /etc/systemd/logind.conf
+# echo sudo vim /etc/systemd/logind.conf
 
 # search for parameter HandleLidSwitch add an conportament to
 # Shutdown:
@@ -67,7 +72,7 @@ echo sudo vim /etc/systemd/logind.conf
 
 # sudo restart systemd-logind
 # or
-echo systemctl restart systemd-logind.service
+# echo systemctl restart systemd-logind.service
 
 # Some laptops don't use the hibernate funtion so use it:
-echo sudo pm-hibernate
+# echo sudo pm-hibernate
